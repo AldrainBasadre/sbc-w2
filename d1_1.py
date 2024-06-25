@@ -2,27 +2,27 @@
 while True:
     l = []#list
     
-    making a list
-    1
+    # making a list
+    
     x,y,z,n,m = input("enter list: "),input("enter list: "),input("enter list: "),input("enter list: "),input("enter list: ")
     l.append(x),l.append(y),l.append(z),l.append(n),l.append(m)
-    2
+    
     for i in range(3):
         x = input(f"enter value in list {i+1}: ")
         l.append(x)   
-    3
+    
     thelist = [int(input(f"({list}enter list: ")) for list in ["","","","",""]]
     l.append(thelist)
     
-    printing the list
+    # printing the list
     print("the list are: ",l)
     print("the list are: ",thelist)
     
-    asking for condition
+    # asking for condition
     print ("0 if naa 1 if wla")
     b = int(input("is boss here?: "))
     
-    condition for dropping a value in list
+    # condition for dropping a value in list
     if b == 0:
         l.pop(0)
         l.sort()
