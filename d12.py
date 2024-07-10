@@ -27,7 +27,9 @@ def bubble_sort(arr):
             if arr[j] > arr[j + 1]:
                 arr[j], arr[j + 1] = arr[j + 1], arr[j]
                 swapped = True
+                print(f"Swapped: {arr}")
         if not swapped:
+            print(f"Done")
             break
     return arr
 
