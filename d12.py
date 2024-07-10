@@ -1,37 +1,35 @@
+text = input("Make a Sentence: ")
+news = []
+word = ""
+for char in text:
+    if char != " ":
+        word += char
+    else:
+        news.append(word)
+        word = ""
+if word:
+    news.append(word)   
+print (news)
 
-# alpha = ["Q", "S", "A", "M", "Z", "R"]
-# str = len(alpha)
-# for i in range(str): 
-#     print(f"Pass {i+1}")
-#     for j in range(str-i-1):
-#         print(f"Comparing {alpha[j]} and {alpha[j+1]}")
-#         if alpha[j] > alpha[j+1]:
-#             alpha[j], alpha[j+1] = alpha[j+1], alpha[j]
-#             print(f"Swapped: {alpha}")
-#         else:
-#             print(f"No swapping needed")
-#         print(f"List after the pass {i+1}: {alpha}")
-# print(f"Final sorted list {alpha}")
+# #word tokenization
+# def tokenize(text):
+#     tokens = []
+#     current_token = []
+    
+#     for char in text.title():
+#         if char.isalnum():
+#             current_token.append(char)
+#         elif current_token:
+#             tokens.append(''.join(current_token))
+#             current_token = []
+    
+#     if current_token:
+#         tokens.append(''.join(current_token))
+    
+#     return tokens
 
+# text = input("Enter a Sentence: ")
+# tokens = tokenize(text)
+# print(tokens)
 
-
-
-
-
-
-def bubble_sort(arr):
-    n = len(arr)
-    for i in range(n):
-        swapped = False
-        for j in range(0, n - i - 1):
-            if arr[j] > arr[j + 1]:
-                arr[j], arr[j + 1] = arr[j + 1], arr[j]
-                swapped = True
-                print(f"Swapped: {arr}")
-        if not swapped:
-            print(f"Done")
-            break
-    return arr
-
-arr = ["Q","S","A","M","Z","R"]
-print(bubble_sort(arr))
+        
